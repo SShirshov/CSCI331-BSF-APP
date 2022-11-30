@@ -8,6 +8,7 @@ export const NavBar = () => {
             <li id="head" className={"navLink"}>
                 <ul><NavLink to={"/entries"}>Entries</NavLink></ul>
                 <ul><NavLink to={"/contactinfo"}>Contact Info</NavLink></ul>
+                <ul><NavLink to={"#"}>Messages</NavLink></ul>
             </li>
         </header>
     )

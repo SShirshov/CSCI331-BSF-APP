@@ -3,7 +3,7 @@
     flex-direction: row;
     margin: 0px;
     background-color: white;
-    justify-content: left;
+    justify-content: center;
     margin-top: 2em;
     margin-bottom: 2em;
 
@@ -16,6 +16,7 @@
     text-decoration: none;
 }
 header{
+
     width: 75%;
 }
 
