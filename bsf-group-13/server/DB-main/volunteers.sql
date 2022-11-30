@@ -35,6 +35,16 @@ CREATE TABLE `volunteers` (
   `time_in` datetime DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
+
+CREATE TABLE `messages` (
+  `id` int(11) NOT NULL,
+  `first_name` varchar(64) DEFAULT NULL,
+  `email_address` varchar(50) DEFAULT NULL,
+  `subjects` varchar(200) DEFAULT NULL,
+  `messagem` varchar(500) DEFAULT NULL,
+  `time_in` datetime DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
 --
 -- Dumping data for table `volunteers`
 --

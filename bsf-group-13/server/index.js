@@ -52,7 +52,7 @@ app.post("/api/create", (req, res) => {
         res.send(result)
     })
 })
-//create contact
+//create message
 app.post("/api/create_message", (req, res) => {
     const fn = req.body.first
     const subj = req.body.subjects
