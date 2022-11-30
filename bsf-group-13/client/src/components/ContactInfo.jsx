@@ -1,7 +1,19 @@
 import logo from '../components/BSF.jpeg';
 import "./ContactInfo.css";
+import {useState} from "react";
+import axios from "axios";
 
 const ContactInfo = () => {
+    const [name, setName] = useState('');
+    const [email, setEmail] = useState('');
+    const [subject, setSubject] = useState('');
+    const [message, setMessage] = useState('');
+
+    // CREATE (POST)
+    function submitMessage() {
+        axios.post(`${process.env.REACT_APP_HOST}/api/create_message`, { firstname: name, email: email, subject: subject, message: message })
+    }
+
     return (
         <>
             <img class = "img-logo" src={logo} alt="Logo" />
@@ -21,14 +33,14 @@ const ContactInfo = () => {
 
                                 <div class="col-md-6">
                                     <div class="md-form mb-0">
-                                        <input type="text" id="name" name="name" class="form-control" placeholder={"Bobby Joe"}/>
+                                        <input type="text" id="name" value={name ?? ''} name="name" class="form-control" placeholder={"Bobby Joe"} onChange={(e) => setName(e.target.value)}/>
                                             <label for="name" class="">Name</label>
                                     </div>
                                 </div>
 
                                 <div class="col-md-6">
                                     <div class="md-form mb-0">
-                                        <input type="text" id="email" name="email" class="form-control" placeholder={"epicskier@shred.com"}/>
+                                        <input type="text" id="email" value={email ?? ''} name="email" class="form-control" placeholder={"epicskier@shred.com"} onChange={(e) => setEmail(e.target.value)}/>
                                             <label for="email" class="">Email</label>
                                     </div>
                                 </div>
@@ -38,7 +50,7 @@ const ContactInfo = () => {
                             <div class="row">
                                 <div class="col-md-12">
                                     <div class="md-form mb-0">
-                                        <input type="text" id="subject" name="subject" class="form-control" placeholder={"Questions about lessons"}/>
+                                        <input type="text" id="subject" value={subject ?? ''} name="subject" class="form-control" placeholder={"Questions about lessons"} onChange={(e) => setSubject(e.target.value)}/>
                                             <label for="subject" class="">Subject</label>
                                     </div>
                                 </div>
@@ -49,7 +61,7 @@ const ContactInfo = () => {
                                 <div class="col-md-12">
 
                                     <div class="md-form">
-                                        <textarea type="text" id="message" name="message" rows="2" class="form-control md-textarea" placeholder={"I wanted to know more about..."}></textarea>
+                                        <textarea type="text" id="message" value={message ?? ''} name="message" rows="2" class="form-control md-textarea" placeholder={"I wanted to know more about..."} onChange={(e) => setMessage(e.target.value)}></textarea>
                                         <label for="message">Message</label>
                                     </div>
 
@@ -59,7 +71,7 @@ const ContactInfo = () => {
                         </form>
 
                         <div class="text-center text-md-left">
-                            <a class="btn btn-primary" onclick="document.getElementById('contact-form').submit();">Send</a>
+                            <a class="btn btn-primary" onClick={submitMessage}>Send</a>
                         </div>
                         <div class="status"></div>
                     </div>
