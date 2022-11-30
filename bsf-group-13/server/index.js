@@ -28,6 +28,18 @@ app.get("/api/read", (req, res) => {
     })
 })
 
+// READ messages
+app.get("/api/read_messages", (req, res) => {
+    const sqlSelect = "SELECT * FROM messages;"
+    db.query(sqlSelect, (err, result) => {
+        if(err){
+            throw err;
+        }
+        res.send(result);
+    })
+})
+
+
 // CREATE
 app.post("/api/create", (req, res) => {
     const fn = req.body.first
@@ -37,6 +49,19 @@ app.post("/api/create", (req, res) => {
     db.query(sqlInsert, [fn, ln, ea], (err, result) => {
         if(err) throw err
         console.log("Server posted: ", fn, ln)
+        res.send(result)
+    })
+})
+//create contact
+app.post("/api/create_message", (req, res) => {
+    const fn = req.body.first
+    const subj = req.body.subjects
+    const ms = req.body.messagem
+    const ea = req.body.email
+    const sqlInsert = "INSERT INTO volunteers (first_name, email_address, subjects, messagem) VALUES (?,?,?);"
+    db.query(sqlInsert, [fn, ea, subj, ms], (err, result) => {
+        if(err) throw err
+        console.log("Server posted: ", fn)
         res.send(result)
     })
 })
