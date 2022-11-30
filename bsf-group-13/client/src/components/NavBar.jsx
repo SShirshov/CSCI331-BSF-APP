@@ -5,10 +5,10 @@ export const NavBar = () => {
         <nav className="navbar navbar-expand-lg navbar-light bg-light">
             <ul className="navbar-nav mr-auto h3">
                 <li className="nav-item">
-                    <a className="nav-link" href="">Ooga</a>
+                    <a className="nav-link" href="">Home</a>
                 </li>
                 <li className="nav-item">
-                    <a className="nav-link" href="">Booga</a>
+                    <a className="nav-link" href="">Contact Us</a>
                 </li>
             </ul>
         </nav>
