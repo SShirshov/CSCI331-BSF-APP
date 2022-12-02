@@ -58,7 +58,7 @@ app.post("/api/create_message", (req, res) => {
     const subj = req.body.subject
     const ms = req.body.message
     const ea = req.body.email
-    const sqlInsert = "INSERT INTO volunteers (first_name, email_address, subjects, messagem) VALUES (?,?,?,?);"
+    const sqlInsert = "INSERT INTO messages (first_name, email_address, subjects, messagem) VALUES (?,?,?,?);"
     db.query(sqlInsert, [fn, ea, subj, ms], (err, result) => {
         if(err) throw err
         console.log("Server posted: ", fn)
