@@ -4,7 +4,7 @@ import {NavBar} from "../NavBar";
 import {BrowserRouter, Route, Routes} from "react-router-dom";
 import Entries from "../Entries";
 import ContactInfo from "../ContactInfo";
-import Messages from "./Messages";
+import Messages from "../Messages";
 
 function App() {
 
