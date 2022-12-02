@@ -12,6 +12,10 @@ const ContactInfo = () => {
     // CREATE (POST)
     function submitMessage() {
         axios.post(`${process.env.REACT_APP_HOST}/api/create_message`, { name: name, email: email, subject: subject, message: message })
+        setName('')
+        setEmail('')
+        setSubject('')
+        setMessage('')
     }
 
     return (
