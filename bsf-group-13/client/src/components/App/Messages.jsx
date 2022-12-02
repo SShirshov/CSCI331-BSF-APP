@@ -13,6 +13,8 @@ const Messages = () => {
         })
     }, [messages])
 
+    console.log('message data is ', messages);
+
     const columns = [
         {
             field: 'first_name',
