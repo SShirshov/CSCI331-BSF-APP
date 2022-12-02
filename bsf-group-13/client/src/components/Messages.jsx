@@ -44,6 +44,7 @@ const Messages = () => {
             <DataGrid
                 columns={columns}
                 rows={messages}
+                getRowId={(r) => r.messagem}
             />
         </div>
     )
