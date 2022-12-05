@@ -11,7 +11,7 @@
 - Kirsten Keblish's [website](http://csci331.cs.montana.edu:50xx/entries)
 
 #### Presentation link
-- link here
+- https://docs.google.com/presentation/d/1OkwRprjgQP0RJ7hK68HLZul7KtJSl1YK76_vYv6IRfM/edit?usp=sharing
 
 #### Creative objective
 Our goal was to create a contact info page that users could fill out if they wanted to ask any 
@@ -36,7 +36,10 @@ the data in a clean matter. We did not need to use additional .env variables.
 - Created the entire messages page for admin members to read messages that customers send from the contact info page
 - Created the entire README
 ##### Simeon
-- Stuff from footer
+- Coded the backend for contact us page and messages page.
+- Contact us page general layout as well as a little styling
+- Created the schema for contact info messages in the database
+- Completed some basic nav bar styling
 - Created the entire presentation
 ##### Kirsten
 I did 
