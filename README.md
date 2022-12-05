@@ -46,7 +46,7 @@ I did
 
 #### Conclusion
 We learned that using ReactRouter for navigation in a React app is super simple and useful! Also creating endpoints 
-for frontend/backend communication was fairly simple was we got the hang of it. Using an MUI datagrid to display the
+for frontend/backend communication was fairly simple once we got the hang of it. Using an MUI datagrid to display the
 user messages was also a nice way to display things for the BSF admin in a clean way without having to reinvent the wheel.
 Overall, we were pretty happy with what we did, and can't think of anything we would do differently if we had the chance.
 
