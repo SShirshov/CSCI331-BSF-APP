@@ -8,7 +8,7 @@
 #### Members and website link
 - Bryce Leighton's [website](http://csci331.cs.montana.edu:5050/entries)
 - Simeon Shirshov's [website](http://csci331.cs.montana.edu:5069/entries)
-- Kirsten Keblish's [website](http://csci331.cs.montana.edu:50xx/entries)
+- Kirsten Keblish's [website](http://csci331.cs.montana.edu:5035/entries)
 
 #### Presentation link
 - https://docs.google.com/presentation/d/1OkwRprjgQP0RJ7hK68HLZul7KtJSl1YK76_vYv6IRfM/edit?usp=sharing
@@ -42,7 +42,11 @@ the data in a clean matter. We did not need to use additional .env variables.
 - Completed some basic nav bar styling
 - Created the entire presentation
 ##### Kirsten
-I did 
+- Created responsive UI design and styled pages
+- Created finalized navigation bar with BSF logo and active links
+- Utilized styles and typography from BSF website to keep consistent style
+- Created full additional footer with links and information
+- Added interactive map using Google Maps API and iconify
 
 #### Conclusion
 We learned that using ReactRouter for navigation in a React app is super simple and useful! Also creating endpoints 
