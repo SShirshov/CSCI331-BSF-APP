@@ -1,0 +1,32 @@
+header{
+    width: 100%;
+    background-color: #c8c8c8;
+    border-bottom: 2px solid rgb(176,27,31);
+}
+
+
+.navLink a {
+    font-size: x-large;
+    color: black;
+    text-decoration: none;
+}
+
+
+.navLink a:hover{
+    color: white;
+}
+
+.small-logo{
+    width: 12em;
+    height: 6em;
+    margin: 0;
+    float: left;
+}
+
+#head {
+    display: flex;
+    flex-direction: row;
+    height: 6em;
+    padding-top: 1.8em;
+    padding: 1.8em 3em 1.8em 3em;
+}

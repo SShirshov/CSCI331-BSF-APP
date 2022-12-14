@@ -1,0 +1,41 @@
+.contact-content{
+    margin-left: 10.5em;
+    margin-bottom: 3em;
+}
+
+.container2{
+    margin: 6em 0 6em 10.5em;
+}
+
+.img-map{
+    max-width: 40%;
+}
+
+.col-md-6{
+    padding: 0.5em;
+}
+
+.col-md-12{
+    padding: 0.5em;
+}
+
+#send{
+    color: white;
+    padding: 1em;
+    background-color: blue;
+    border: 1px solid black;
+    border-radius: 25px;
+}
+
+#contact-message{
+    margin-top: 1em;
+}
+
+
+.contact-title{
+    font-weight: bold;
+}
+
+#footerMargin{
+    margin-bottom: 3em;
+}
